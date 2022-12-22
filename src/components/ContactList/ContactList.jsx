@@ -8,9 +8,6 @@ export const ContactList = () => {
     const filter = useSelector(state => state.filter.filter);
 
     const { data: contacts, error, isLoading } = useGetContactsQuery();
-console.log(contacts)
-console.log(filter)
-    // const visibleContacts = contacts.filter(contact => contact.name.toLowerCase().includes(filter));
 
     return (
         <ContactListStyled>
