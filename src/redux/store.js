@@ -10,7 +10,7 @@ export const store = configureStore({
   },
   middleware: getDefaultMiddleware => [
     ...getDefaultMiddleware(),
-    materialsApi.middleware,
+    contactsApi.middleware,
   ],
 });
 
